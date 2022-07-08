@@ -26,7 +26,8 @@ var room = prompt('Enter room name:');
 
 //Initializing socket.io
 //var socket = io.connect();
-var socket = io.connect("http://localhost:8000");
+//var socket = io.connect("http://localhost:8000");
+var socket = io.connect("https://videoconferencingappattempt2.herokuapp.com/");
 if (room !== '') {
   socket.emit('create or join', room);
   console.log('Attempted to create or  join room', room);
