@@ -20,7 +20,8 @@ app.get("/", function(req, res){
 
 var server = http.createServer(app);
 
-server.listen(8000);
+server.listen('https://videoconferencingappattempt2.herokuapp.com/');
+//server.listen(8000);
 
 var io = socketIO(server);
 
